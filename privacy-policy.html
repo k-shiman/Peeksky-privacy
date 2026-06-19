@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — PeekSky</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8f9fa;
+      color: #1a1a2e;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 16px;
+      padding: 48px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #302b63;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 99px;
+      margin-bottom: 20px;
+      letter-spacing: 0.04em;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #0f0c29;
+      margin-bottom: 6px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #eee;
+    }
+
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #0f0c29;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    p { margin-bottom: 12px; color: #444; font-size: 15px; }
+
+    ul {
+      margin: 10px 0 14px 20px;
+      color: #444;
+      font-size: 15px;
+    }
+    ul li { margin-bottom: 6px; }
+
+    .highlight {
+      background: #f0f4ff;
+      border-left: 4px solid #302b63;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .api-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 14px;
+    }
+    .api-table th {
+      background: #f5f5f5;
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 600;
+      color: #555;
+      border-bottom: 2px solid #eee;
+    }
+    .api-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #f0f0f0;
+      color: #444;
+      vertical-align: top;
+    }
+    .api-table tr:last-child td { border-bottom: none; }
+
+    a { color: #302b63; }
+
+    .footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="badge">Chrome Extension</div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">
+    PeekSky &nbsp;·&nbsp; Last updated: June 18, 2026
+  </p>
+
+  <div class="highlight">
+    <strong>Short version:</strong> This extension does not collect, store, or share any personal
+    data on external servers. Everything stays on your device. No accounts, no tracking, no ads.
+  </div>
+
+  <h2>1. What This Extension Does</h2>
+  <p>
+    PeekSky is a Chrome browser extension that displays current weather conditions,
+    a 7-day forecast, hourly forecasts, sport activity suitability ratings, air quality, and sleep
+    quality scores for any city in the world.
+  </p>
+
+  <h2>2. Data We Collect and How It Is Used</h2>
+
+  <p><strong>2.1 Location (Geolocation)</strong></p>
+  <p>
+    When you open the extension for the first time, it may request access to your device's
+    geographic location. This permission is optional — you can deny it and use the city search
+    instead.
+  </p>
+  <p>If permission is granted, your coordinates are used <em>only</em> to:</p>
+  <ul>
+    <li>Identify your nearest city (via OpenStreetMap Nominatim reverse geocoding)</li>
+    <li>Fetch weather data for that city</li>
+  </ul>
+  <p>
+    Your coordinates are <strong>never stored on any server</strong>, never sold, and never used
+    for advertising or profiling. After the city name is resolved, the coordinates are discarded.
+  </p>
+
+  <p><strong>2.2 City Search Queries</strong></p>
+  <p>
+    When you type a city name in the search field, the text is sent to the Open-Meteo
+    Geocoding API to find matching cities. No personal information is attached to these requests.
+  </p>
+
+  <p><strong>2.3 Data Stored Locally (on your device only)</strong></p>
+  <p>
+    The extension uses your browser's <code>localStorage</code> to remember your preferences
+    between sessions. This data never leaves your device:
+  </p>
+  <ul>
+    <li><strong>Last city</strong> — city name, country, and coordinates of the last viewed city</li>
+    <li><strong>Recent cities</strong> — up to 3 recently searched cities for quick access</li>
+    <li><strong>Temperature unit</strong> — your preference (°C or °F)</li>
+  </ul>
+  <p>
+    You can clear this data at any time by clearing your browser's site data for the extension,
+    or by uninstalling the extension.
+  </p>
+
+  <h2>3. Third-Party APIs</h2>
+  <p>
+    The extension makes requests to the following third-party services to fetch weather and
+    location data. No personal information, user identifiers, or account data is sent to these
+    services — only geographic coordinates or city names.
+  </p>
+
+  <table class="api-table">
+    <tr>
+      <th>Service</th>
+      <th>Purpose</th>
+      <th>Privacy Policy</th>
+    </tr>
+    <tr>
+      <td><strong>Open-Meteo</strong><br/>api.open-meteo.com</td>
+      <td>Weather forecast, hourly data, air quality (AQI, pollen)</td>
+      <td><a href="https://open-meteo.com/en/terms" target="_blank">open-meteo.com/en/terms</a></td>
+    </tr>
+    <tr>
+      <td><strong>Open-Meteo Geocoding</strong><br/>geocoding-api.open-meteo.com</td>
+      <td>City name search and autocomplete</td>
+      <td><a href="https://open-meteo.com/en/terms" target="_blank">open-meteo.com/en/terms</a></td>
+    </tr>
+    <tr>
+      <td><strong>Nominatim / OpenStreetMap</strong><br/>nominatim.openstreetmap.org</td>
+      <td>Reverse geocoding (coordinates → city name) when geolocation is used</td>
+      <td><a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank">osmfoundation.org</a></td>
+    </tr>
+  </table>
+
+  <p>
+    All three services are open-source or open-data projects. None of them use the data sent by
+    this extension for advertising or user tracking.
+  </p>
+
+  <h2>4. Data We Do NOT Collect</h2>
+  <ul>
+    <li>No user accounts or registration</li>
+    <li>No email addresses or names</li>
+    <li>No browsing history or tabs</li>
+    <li>No usage analytics or crash reports</li>
+    <li>No cookies</li>
+    <li>No advertising identifiers</li>
+    <li>No data is sold or shared with any third parties for commercial purposes</li>
+  </ul>
+
+  <h2>5. Children's Privacy</h2>
+  <p>
+    This extension does not knowingly collect any information from children under the age of 13.
+    The extension contains no age-restricted content.
+  </p>
+
+  <h2>6. Changes to This Policy</h2>
+  <p>
+    If this privacy policy is updated, the "Last updated" date at the top of this page will be
+    changed. Continued use of the extension after any changes constitutes acceptance of the
+    updated policy.
+  </p>
+
+  <h2>7. Contact</h2>
+  <p>
+    If you have any questions about this privacy policy or the extension's data practices,
+    you can contact the developer at:
+    <a href="mailto:shiman56ru@gmail.com">shiman56ru@gmail.com</a>
+  </p>
+
+  <div class="footer">
+    &copy; 2026 PeekSky &nbsp;·&nbsp;
+    Powered by <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> (open-source, free)
+  </div>
+
+</div>
+</body>
+</html>
